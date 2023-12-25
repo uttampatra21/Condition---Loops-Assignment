@@ -1,0 +1,94 @@
+Q1. What are conditional statements? Explain conditional statements with syntax and examples.
+
+Conditional statements are constructs in programming that allow the execution of different code blocks based on whether a specified condition evaluates to true or false. They enable the creation of decision-making structures in code.
+
+if (condition) {
+  // Code to be executed if the condition is true
+}
+
+if (condition) {
+  // Code to be executed if the condition is true
+} else {
+  // Code to be executed if the condition is false
+}
+
+if (condition1) {
+  // Code to be executed if condition1 is true
+} else if (condition2) {
+  // Code to be executed if condition2 is true
+} else {
+  // Code to be executed if none of the conditions are true
+}
+
+
+
+Q2. Write a program that grades st9dents based on their marks^
+8 If grFatFr than 90 thFn A GradE
+8 If bFtwFFn 70 and 90 thFn a B gradE
+8 If bFtwFFn 50 and 70 thFn a C gradE
+8 BFlow 50 thFn an F gradF
+
+ANS :
+
+let marks = 85;
+let grade;
+
+if (marks > 90) {
+  grade = 'A';
+} else if (marks >= 70 && marks <= 90) {
+  grade = 'B';
+} else if (marks >= 50 && marks < 70) {
+  grade = 'C';
+} else {
+  grade = 'F';
+}
+
+console.log(`Student's grade: ${grade}`);
+
+
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and
+examples.
+
+ANS : 
+
+Loops are control structures in programming that allow a certain block of code to be executed repeatedly as long as a specified condition is true. They provide a way to automate repetitive tasks and iterate over a sequence of elements.
+
+EXMP : 
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+Q4. Generate n9mbers between any 2 given n9mbers.
+Ex
+8 onst num1 = 10
+8 onst num2 = 25;
+O9tp9t: 11, 12, 13, ...., 25
+
+ANS  :
+
+const num1 = 10;
+const num2 = 25;
+
+for (let i = num1; i <= num2; i++) {
+  console.log(i);
+}
+
+
+Q5. Use the while loop to print n9mbers from 1 to 25 in ascending and descending order.
+
+ANS : 
+
+// Ascending Order
+let ascendingCounter = 1;
+while (ascendingCounter <= 25) {
+  console.log(ascendingCounter);
+  ascendingCounter++;
+}
+
+// Descending Order
+let descendingCounter = 25;
+while (descendingCounter >= 1) {
+  console.log(descendingCounter);
+  descendingCounter--;
+}
